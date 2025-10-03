@@ -1,0 +1,206 @@
+:root {
+
+    --neutral-900: hsl(248, 70%, 10%);
+    --neutral-700: hsl(245, 19%, 35%);
+    --neutral-500: hsl(245, 15%, 58%);
+    --neutral-300: hsl(252, 6%, 83%);
+    --neutral-0: hsl(0, 0%, 100%);
+
+    /* ORANGE */
+    --orange-500: hsl(7, 88%, 67%);
+    --orange-700: hsl(7, 71%, 60%);
+
+    /* Gradient Text */
+    --gradiente: linear-gradient( 90deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%) )
+
+}
+
+@font-face {
+    font-family: 'InconsolataBold';
+    src: url('../assets/fonts/static/Inconsolata-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'InconsolataExtra';
+    src: url('../assets/fonts/static/Inconsolata-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'InconsolataMedium';
+    src: url('../assets/fonts/static/Inconsolata-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'InconsolataRegular';
+    src: url('../assets/fonts/static/Inconsolata-Regular.ttf') format('truetype');
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/*? UTILIDADES */
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../assets/images/background-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajuste para todos los dispositivos */
+    background-position: center center; /* Centrado */
+}
+
+@media(min-width: 768px){
+    body{
+        background-image: url('../assets/images/background-tablet.png');
+    }
+}
+
+@media(min-width: 1024px){
+    body{
+        background-image: url('../assets/images/background-desktop.png');
+        background-color: blue;
+    }
+}
+
+@media(min-width: 1440px){
+    body{
+        background-image: url('../assets/images/background-desktop.png');
+        background-color: yellowgreen;
+    }
+}
+
+@media(min-width: 2560px){
+    body{
+        background-color: purple;
+    }
+}
+
+
+
+/** LINEAR PATTERN */
+
+.linearPatter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Evita que interfiera con otros elementos */
+}
+
+.linearPatter::after{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../assets/images/pattern-lines.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+
+/** Vectores **/
+
+.vector__container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/** Vector Top **/
+
+.vector__top::after{
+    content: '';
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    height: 7rem;
+    background-image: url('../assets/images/pattern-squiggly-line-top.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+@media(min-width: 768px){
+
+    .vector__top::after{
+        top: 8.8rem;
+        height: 10.8rem;
+    }
+
+}
+
+@media(min-width: 1440px){
+
+    .vector__top::after{
+        top: 7.7rem;
+        height: 20.5rem;
+    }
+
+}
+
+/** Cercle Top **/
+.circle__top::after{
+    content: '';
+    position: absolute;
+    top: -6rem; /* X */
+    left: -3rem; /* Y */
+    width: 100%;
+    height: 23rem;
+    background-image: url('../assets/images/pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media(min-width: 768px){
+    .circle__top::after{
+        top: -7rem;
+        left: -1rem;
+    }
+}
+
+@media(min-width: 1024px){
+    .circle__top::after{
+        top: -8rem;
+        left: -3rem;
+    }
+}
+
+@media(min-width: 1440px){
+    .circle__top::after{
+        top: -9rem;
+        left: 1rem;
+        width: 70%;
+    }
+}
+
+@media(min-width: 2560px){
+    .circle__top::after{
+        left: 6rem;
+    }
+}
+
+/****/
+/****/
