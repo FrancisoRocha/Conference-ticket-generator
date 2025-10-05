@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Conference ticket generator</title>
   <link rel="stylesheet" href="./style/normalize.css">
   <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
 
-<div class="appContainer">
+  <main class="appContainer">
 
     <!-- Linear Pattern -->
     <span class="linearPatter"></span>
@@ -19,10 +22,52 @@
     <div class="vector__container">
       <span class="vector__top"></span>
       <span class="circle__top"></span>
+      <span class="circle__center"></span>
+      <span class="vector__bottom"></span>
     </div>
 
+    <header class="logo">
+      <img src="./assets/images/logo-full.svg" class="img__logo">
+    </header>
 
-</div>
+    <div class="info__ticket">
+      <h1 class="title__ticket">Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p class="text__ticket">Secure your spot at next year's biggest coding conference.</p>
+    </div>
+
+    <!-- FORMULARIO DRAG AND DROP -->
+    <form class="form__ticket">
+      <!-- DRAG AND DROP -->
+      <!-- CONTAINER DRAG & DROP -->
+      <div class="cotainer__dragDrop">
+        <p class="upload__ticket">Upload Avatar</p>
+        <div id="dragDrop">
+          <div class="icon__upload">
+            <img src="./assets/images/icon-upload.svg">
+          </div>
+          <p class="text__drag">Drag and drop or click to upload</p>
+        </div>
+        <div class="info__dragDrop">
+          <img src="./assets/images/icon-info.svg" class="icon__info">
+          <p class="info__upload">Upload your photo (JPG or PNG, max size: 500KB).</p>
+        </div>
+      </div>
+
+      <label for="Name">Full Name</label>
+      <input type="text" id="name" name="Name">
+      
+      <label for="Email">Email Address</label>
+      <input type="email" id="email" name="Email" placeholder="example@email.com">
+      
+      <label for="User">GitHub Username</label>
+      <input type="text" id="user" name="User" placeholder="@yourusername">
+
+      <button class="btn__generate">Generate My Ticket</button>
+
+    </form>
+
+  </main>
 
 </body>
+
 </html>
