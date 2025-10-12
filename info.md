@@ -31,3 +31,15 @@ Coding Conf
 Jan 31, 2025 / Austin, TX
 
 <!-- Generated tickets ends -->
+
+const previewContent = document.querySelector('.img__upload');
+                previewContent.style.display = 'none';
+                preview.classList.add('preview__image');
+                const previewContainer = document.querySelector('.icon__upload');
+                previewContainer.append(preview);
+            } else {
+                const previewContent = document.querySelector('.img__upload');
+                previewContent.style.display = 'block';
+                const previewContainer = document.querySelector('.icon__upload');
+                previewContainer.append(preview);
+            }

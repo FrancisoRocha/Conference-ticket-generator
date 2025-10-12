@@ -267,7 +267,7 @@ body{
 @media(min-width: 1440px){
     .vector__bottom::after{
         left: -25rem;
-        height: 70rem; 
+        height: 70rem;
         background-image: url('../assets/images/pattern-squiggly-line-bottom-desktop.svg');
     }
 }
@@ -495,3 +495,35 @@ input::placeholder{
 }
 
 
+/** Preview Imagen **/
+.preview__image{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.2rem;
+    object-fit: cover;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.button__primary,
+.button__change{
+    font-family: 'InconsolataRegular';
+    font-size: 1.2rem;
+    color: var(--neutral-0);
+    text-align: center;
+    line-height: 120%;
+    letter-spacing: -0.2px;
+    width: 9rem;
+    height: 3rem;
+    border-radius: .4rem;
+    border: none;
+    background: hsla(0deg 0% 100% / 8%);
+    backdrop-filter: blur(3px);
+    cursor: pointer;
+}
