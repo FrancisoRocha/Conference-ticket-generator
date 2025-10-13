@@ -8,7 +8,7 @@
 
     /* ORANGE */
     --orange-500: hsl(7, 88%, 67%);
-    --orange-700: hsl(7, 71%, 60%);
+    --orange-700: #e16151;
 
     /* Gradient Text */
     --gradiente: linear-gradient( 90deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%) )
@@ -527,3 +527,23 @@ input::placeholder{
     backdrop-filter: blur(3px);
     cursor: pointer;
 }
+
+.error{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.error__message{
+    font-family: 'InconsolataRegular';
+    font-size: 1.2rem;
+    color: var(--orange-700);
+    line-height: 120%;
+    letter-spacing: -0.2px;
+}
+
+.icon__info{
+    width: 2rem;
+    height: 2rem;
+}
+

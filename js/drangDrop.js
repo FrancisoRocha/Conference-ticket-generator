@@ -77,6 +77,7 @@ function handleFiles(files) {
             preview.classList.add('preview__image');
             previewContainer.append(preview);
         };
+        renderButtons();
 
     }
 
